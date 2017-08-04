@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Employee Data
+	</title>
+
+	<!-- Links -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<script
+  src="http://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous">
+  </script>
+  	<script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js">
+  	</script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/locale/af.js">
+	</script>
+<!-- End of Links -->
+</head>
+
+<body>
+<!-- Start of Container -->
+<!-- Display employee data -->
+<div class = "container">
+	<div class = "jumbotron">
+		<h1>Employee Data Management</h1>
+	</div>
+</div>
+
+<div class = "container">
+	<div class = "panel panel-default">
+		<div class = "panel-heading">Current Employees</div>
+		<div class = "panel-body">
+			<table class="table table-striped">
+   <thead>
+      <tr>
+        <th>Employee Name</th>
+        <th>Role</th>
+        <th>Start Date</th>
+        <th>Months Worked</th>
+        <th>Monthly Rate ($)</th>
+        <th>Total Billed ($)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>john@example.com</td>
+        <td>john@example.com</td>
+        <td>john@example.com</td>
+        <td>john@example.com</td>
+      </tr>
+      
+      
+    </tbody>
+  </table>
+</div>
+	
+</div>
+	</div>
+</div>
+	
+<!-- Input Form -->
+<div class = "container">
+	<div class = "panel panel-default">
+		<div class = "panel-heading">Current Employees</div>
+		<div class = "panel-body">
+		<div class="form-group">
+  <label for="usr">Employee Name</label>
+  <input type="text" class="form-control" id="employeeName">
+</div>
+
+<div class="form-group">
+  <label for="pwd">Role</label>
+  <input type="text" class="form-control" id="role">
+
+</div><div class="form-group">
+  <label for="usr">Start Date (DD/MM/YY - ex. 01/01/98)</label>
+  <input type="text" class="form-control" id="startDate">
+</div>
+
+<div class="form-group">
+  <label for="usr">Monthly Rate</label>
+  <input type="text" class="form-control" id="monthlyRate">
+  <button type="submit" class="btn btn-default">Submit</button>
+</div>
+		</div>
+	</div>
+</div>
+
+
+</div>
+<script src = "assets/logic.js">
+</script>
+</body>
+</html>
